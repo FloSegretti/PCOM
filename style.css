@@ -1,0 +1,184 @@
+/* Reset y configuración base */
+/* Reset y configuración base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* -----------------------
+   HEADER (hero con imagen)
+   ----------------------- */
+header index{
+ 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* ocupa el 80% de la altura visible */
+  object-fit: cover;
+  z-index: -2;
+}
+
+
+  min-height: 80vh; /* ocupa gran parte de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 3em 1em;
+  overflow: hidden;
+}
+
+header h1,
+header p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+
+header p.integrantes {
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  max-width: 900px;
+  color: rgba(255,255,255,0.95);
+}
+
+/* Secciones */
+section {
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+  margin-top: 6em;
+  padding-bottom: 0.3em;
+}
+
+/* Imagen autor */
+.autor-foto {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.autor-foto img {
+  width: 40%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Imagen obra */
+.imagen-obra {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.imagen-obra img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+}
+
+th, td {
+  text-align: left;
+  padding: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #fafafa;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #111;
+  margin-top: 1.5em;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 3em;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+footer a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* NAVBAR */
+.navbar {
+  position: absolute; /* se coloca sobre la imagen del header */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+  backdrop-filter: blur(6px); /* efecto moderno */
+  padding: 1em 0;
+  z-index: 10; /* por encima de la imagen */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #9fd3ff; /* color al pasar el mouse */
+}
